@@ -8,29 +8,65 @@
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<div class="wrapper">
-		<header class="header">s
-			<div class="container">
-				<div class="header__menu-toggle opened">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-				<div class="header__logo">
-					<a href="#" title="На головну">
-						<img src="img/logo.svg" alt='На головну' />
-					</a>
-				</div>
-				<div class="header__catalog-toggle">
-					<button>
-						<img src="img/menu.svg" alt="">
-						<span>
-							Каталог
-						</span>
-					</button>
-				</div>
+	<div style="display: none!important">
+		<svg version="1.1" id="search-mic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 435.2 435.2" style="enable-background:new 0 0 435.2 435.2;" xml:space="preserve">
+		<g>
+			<g>
+				<path d="M356.864,224.768c0-8.704-6.656-15.36-15.36-15.36s-15.36,6.656-15.36,15.36c0,59.904-48.64,108.544-108.544,108.544
+				c-59.904,0-108.544-48.64-108.544-108.544c0-8.704-6.656-15.36-15.36-15.36c-8.704,0-15.36,6.656-15.36,15.36
+				c0,71.168,53.248,131.072,123.904,138.752v40.96h-55.808c-8.704,0-15.36,6.656-15.36,15.36s6.656,15.36,15.36,15.36h142.336
+				c8.704,0,15.36-6.656,15.36-15.36s-6.656-15.36-15.36-15.36H232.96v-40.96C303.616,355.84,356.864,295.936,356.864,224.768z"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path d="M217.6,0c-47.104,0-85.504,38.4-85.504,85.504v138.752c0,47.616,38.4,85.504,85.504,86.016
+				c47.104,0,85.504-38.4,85.504-85.504V85.504C303.104,38.4,264.704,0,217.6,0z"/>
+			</g>
+		</g>
+	</svg>
+</div>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__menu-toggle opened">
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
-		</header>
-	</div>
+			<!-- /header__menu-toggle-->
+			<div class="header__logo">
+				<a href="#" title="На головну">
+					<img src="img/logo.svg" alt='На головну' />
+				</a>
+			</div>
+			<!-- /header__logo-->
+			<div class="header__catalog-toggle">
+				<button>
+					<img src="img/menu.svg" alt="">
+					<span>
+						Каталог
+					</span>
+				</button>
+			</div>
+			<!-- /header__catalog-toggle-->
+			<div class="header__search">
+				<form>
+					<div class="header__search-input">
+						<input type="text" placeholder="Я шукаю..." />
+						<button class="header__search-mic">
+							<svg>
+								<use href="#search-mic"></use>
+							</svg>
+						</button>
+					</div>
+					<button class="header__search-action">Знайти</button>
+				</form>
+			</div>
+			<!-- /header__search-->
+		</div>
+	</header>
+</div>
 </body>
 </html>
