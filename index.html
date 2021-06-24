@@ -4,6 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 	<!--  Stylesheets -->
 	<link rel="stylesheet" href="css/style.css" />
 </head>
@@ -51,7 +57,7 @@
 				</button>
 			</div>
 			<!-- /header__catalog-toggle-->
-			<div class="header__search">
+			<div class="header__search header__search-mic">
 				<form>
 					<div class="header__search-input">
 						<input type="text" placeholder="Я шукаю..." />
@@ -65,8 +71,62 @@
 				</form>
 			</div>
 			<!-- /header__search-->
+			<div class="header__languages">
+				<a href="#">
+					en
+				</a>
+				<span class="separator"></span>
+				<a href="#" class="active">
+					ua
+				</a>
+			</div>
+			<!-- /header__languages-->
+			<div class="header__premium">
+				<a href="#">
+					<span>Спробуйте</span>
+					<span class="premium">Premium</span>
+				</a>
+			</div>
+			<!-- /header__premium -->
+			<div class="header__controls">
+				<a href="#" id="orders">
+					<img src="img/orders.svg" alt="Замовлення">
+					<span class="empty">0</span>
+				</a>
+				<a href="#" id="compare">
+
+					<img src="img/compare.svg" alt="Порівняння">
+					<span>3</span>
+				</a>
+				<a href="#" id="favourites">
+					<img src="img/favourites.svg" alt="Обрані">
+					<span>3</span>
+				</a>
+				<a href="#" id="cart">
+					<img src="img/cart.svg" alt="Кошик">
+					<span class="empty">0</span>
+				</a>
+			</div>
+			<!-- /header__controls-->
 		</div>
 	</header>
+	<main>
+		<div class="container d-flex">
+			<div class="home__catalog"></div>
+			<div class="home__banner"></div>
+		</div>
+	</main>
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
