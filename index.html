@@ -11,6 +11,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!--  Stylesheets -->
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -36,7 +40,7 @@
 <div class="wrapper">
 	<header class="header">
 		<div class="container">
-			<div class="header__menu-toggle opened">
+			<div class="header__menu-toggle">
 				<div></div>
 				<div></div>
 				<div></div>
@@ -113,10 +117,97 @@
 	<main>
 		<div class="container d-flex">
 			<div class="home__catalog"></div>
-			<div class="home__banner"></div>
+			<div class="home__banner">
+
+				<!-- slider starts -->
+				<div class="home__banner-slider">
+					<div><img src="https://content.rozetka.com.ua/banner_main/image_ua/original/190082541.jpg" alt=""></div>
+					<div><img src="https://content1.rozetka.com.ua/banner_main/image_ua/original/186229803.jpg" alt=""></div>
+				</div>
+				<!-- slider end -->
+			</div>
 		</div>
 	</main>
+
+	<!-- Slide menu -->
+	<div class="slide-menu">
+		
+	</div>
+	<!-- /Slide menu -->
 </div>
+
+
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+<!-- Slick slider -->
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('.home__banner-slider').slick();
+	});
+
+
+// $(document).on('ready', function(){
+// 	alert('jQuery is ok');
+// });
+
+
+// $('.header__search form button').on('click', function(){
+// 	var searchTerm = $('.header__search form input').val();
+// 	alert(searchTerm);
+// });zzz
+
+
+$(document).on('click', '.header__search form button', function(){
+	var searchTerm = $('.header__search form input').val();
+	alert(searchTerm);
+});
+
+
+$(document).on('click', '.header__menu-toggle', function(){
+	// $(this) == $('.header__menu-toggle')
+
+	// if($(this).hasClass('opened')){
+	// 	$(this).removeClass('opened');
+	// } else {
+	// 	$(this).addClass('opened');
+	// }
+
+	//Змінюємо клас для кнопки
+	$(this).toggleClass('opened');
+
+	//Змінюємо клас для  меню
+	$('.slide-menu').toggleClass('opened');
+})
+
+
+
+// var firstName = 'Роман';
+// var lastName = 'Турчин';
+// var fullName  = firstName + ' '+ lastName;
+
+var myData = {
+	firstName:'Роман',
+	lastName:'Турчин',
+	age: 31
+}
+
+
+function fullNameFunction(first,last){
+	var fullName = first+' '+last;
+	return fullName;
+}
+
+
+var myFullName = fullNameFunction(myData.firstName, myData.lastName);
+
+// alert(myFullName);
+
+</script>
 </body>
 </html>
 
