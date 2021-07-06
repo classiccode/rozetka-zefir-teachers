@@ -39,6 +39,15 @@
 	height: 24px;
 	fill: #ffa900;
 }
+.product-card  .thumb .add-to-favourites svg.filled { 
+	display: none;
+}
+.product-card  .thumb .add-to-favourites.in-favourites svg  {
+	display: none;
+}
+.product-card  .thumb .add-to-favourites.in-favourites svg.filled  {
+	display: inline-block;
+}
 
 .product-card .title {
 	font-size: 14px;
